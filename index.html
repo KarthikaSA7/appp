@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SANTHI</title>
+    <link rel="shortcut icon" href="assets/images/fav-icon.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href= "{{ url_for('static' , filename= 'css/styles.css') }}">
+    <script src="{{ url_for('static' , filename = 'js/main.js') }}"></script>
+</head>
+<body>
+    <header class="header" >
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a href="" class="navbar-brand">
+                    <h1 class="logo">SANTHI</h1>
+                </a>
+                <button id ="nav-toggle-button" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarnav" aria-controls="navbarnav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarnav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-items "><a href="#home" class="nav-link">HOME</a></li>
+                        <li class="nav-items "><a href="#about" class="nav-link">ABOUT</a></li>
+                        <li class="nav-items "><a href="#skill" class="nav-link">SKILL</a></li>
+                        <li class="nav-items "><a href="#project" class="nav-link">PROJECTS</a></li>
+                        <li class="nav-items "><a href="#contact" class="nav-link"><button class = "btn">Hire Me</button></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container header__container" id="home">
+            <h1>Hi! i’m santhi.</h1>
+            <p>A dedicated civil engineer in designing , planning and executing a wide range of infrastructure projects.</p>
+        </div>
+    </header>
+
+    <section class="container image__container">
+        <img src="{{ url_for('static' , filename = 'images/banner.png') }}" alt="">
+    </section>
+
+    <section class="container about__container" id="about">
+        <h2>MORE<br>ABOUT ME</h2>
+        <div class="about d-flex">
+            <div class="about__image d-flex">
+                <div class="about-style-box"></div>
+                <img src="{{ url_for('static' , filename = 'images/about-img.png') }}" alt="about" class="about-img">
+            </div>
+            <div class="section_description">
+                <p class="para">
+                    As a passionate Junior Architect, I am dedicated to bringing innovative and functional design solutions to life. With a strong foundation in architectural principles and a keen eye for detail, I thrive in collaborative environments where creativity and precision intersect.
+                </p>
+                <div>
+                    <h3></h3>
+                    <div class="personal-details">
+                        <div class="name">
+                            <h4>Name</h4>
+                            <p>Santhi</p>
+                        </div>
+                        <div class="email">
+                            <h4>Email</h4>
+                            <p>santhi1098@gmail.com</p>
+                        </div>
+                        <div class="phone">
+                            <h4>Phone</h4>
+                            <p>+91 6380985771</p>
+                        </div>
+                        <div class="location">
+                            <h4>Location</h4>
+                            <p>Chennai</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="resume">
+            <a href=""><button class="btn" onclick="resumeDownload()">Resume</button></a>
+        </div>
+    </section>
+    
+    <section class="education" id="skill">
+        <div class="container education__container">
+            <div>
+                <h3>Education</h3>
+                <div class="edu d-flex">
+                    <div class="edu-line"></div>
+                    <div class="edu-details">
+                        <p><span class="edu-circle"></span>Chendhuran College of Engineering and Technology.<br><span class="specification">Bachelor of Civil Engineering.</span></p>
+                        <p><span class="edu-circle"></span>Chidambaram Chettiar Higher Seconday School.<br><span class="specification">Higher Education.</span></p>
+                        <p><span class="edu-circle"></span>Selva Vinayagar High School.<br><span class="specification">Secondary Education.</span></p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3>Skills</h3>
+                <div class="skill d-flex">
+                    <div class="edu-line"></div>
+                    <div class="edu-details">
+                        <p><span class="edu-circle"></span>AutoCAD - 2016</span></p>
+                        <p><span class="edu-circle"></span>Revit Architecture - 2018</span></p>
+                        <p><span class="edu-circle"></span>ArchiCAD - 22</span></p>
+                        <p><span class="edu-circle"></span>Staad.Prov8i</span></p>
+                        <p><span class="edu-circle"></span>RCC Detailing using AutoCAD Structure Detailing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project" id="project">
+        <div class="container project__container">
+            <h2>Project</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-head">
+                        <img src="{{ url_for('static' , filename = 'images/project-1.png') }}" alt="" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="plan-name">Revit House Plan</h4>
+                        <p class="plan-detail">This House plan includes various elements to ensure the home is functional, comfortable, and meets the needs of its occupants.</p>
+                        <div class="description">
+                            <p>Key Components of this Plan<p>
+                            <div class="key-details">
+                                <ul>
+                                    <li><p>Ground floor</p></li>
+                                    <li><p>First floor</p></li>
+                                    <li><p>Elevation</p></li>
+                                    <li><p>Section</p></li>
+                                    <li><p>3D view</p></li>   
+                                </ul>
+                            </div>
+                            <div class="download-plan">
+                                <button class="btn" onclick="projectOneDownload()">Download Plan</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-head">
+                        <img src="{{ url_for('static' , filename = 'images/project-2.png') }}" alt="" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="plan-name">2D North Facing House Plan using AutoCad</h4>
+                        <p class="plan-detail">The layout is created using AutoCAD, ensuring precise dimensions and a clear, functional design.</p>
+                        <div class="description">
+                            <p>Key Features of this Plan</p>
+                            <div class="key-details">
+                                <ul>
+                                    <li><p>Orientation</p></li>
+                                    <li><p>Exterior Walls</p></li>
+                                    <li><p>Interior Layout</p></li>
+                                    <li><p>Dimensions</p></li>
+                                    <li><p>Labels and Annotations</p></li>
+                                </ul>
+                            </div>
+                            <div class="download-plan">
+                                <button class="btn" onclick="projectTwoDownload()">Download Plan</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-head">
+                        <img src="{{ url_for('static' , filename = 'images/project-3.png') }}" alt="" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="plan-name">2D North Facing House Plan using AutoCad</h4>
+                        <p class="plan-detail">The layout is created using AutoCAD, ensuring precise dimensions and a clear, functional design.</p>
+                        <div class="description">
+                            <p>Key Features of this Plan</p>
+                            <div class="key-details">
+                                <ul>
+                                    <li><p>Orientation</p></li>
+                                    <li><p>Exterior Walls</p></li>
+                                    <li><p>Interior Layout</p></li>
+                                    <li><p>Dimensions</p></li>
+                                    <li><p>Labels and Annotations</p></li>
+                                </ul>
+                            </div>
+                            <div class="download-plan">
+                                <button class="btn" onclick="projectThreeDownload()">Download Plan</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container contact__container">
+            <h2>That's all about me. <br>feel free to say hi.</h2>
+            <div class="btn_container"><button class="btn" onclick="contactForm()" type="button">Hire Me</button></div>
+            <div class="form_container" id="form">
+                <form action="" id="forms-data">
+                    <input type="text" id="name" placeholder="NAME" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="number" id="phone" placeholder="PHONE NUMBER" required>
+                    <textarea name="say" id="message" placeholder="..." required></textarea>
+                    <div class="btn_container"><button class="btn" id="submit" onclick="formSubmit()" type="button" >submit</button></div>
+                </form>
+            </div>
+            <div class="greeting" id="greet">
+                <h3>Thank you...</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <h2>Designed by Karthika</h2>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        history.scrollRestoration = "manual";
+        ScrollReveal({
+            reset: false,
+            distance: '60px',
+            duration: 1500,
+            delay: 400
+        });
+        ScrollReveal().reveal('.image__container', { delay: 300 , origin: 'right'});
+        ScrollReveal().reveal('.about__container', { delay: 300 , origin: 'bottom'});
+        ScrollReveal().reveal('h2', { delay: 300 , origin: 'left'});
+        ScrollReveal().reveal('.about-style-box', { delay: 300 , origin: 'left'});
+        ScrollReveal().reveal('.about-img', { delay: 300 , origin: 'right'});
+        ScrollReveal().reveal('.section_description', { delay: 300 , origin: 'bottom'});
+        ScrollReveal().reveal('.edu', { delay: 300 , origin: 'left'});
+        ScrollReveal().reveal('.skill', { delay: 300 , origin: 'left'});
+        ScrollReveal().reveal('h3', { delay: 300 , origin: 'left'});
+        ScrollReveal().reveal('.card', { delay: 300 , origin: 'bottom'});
+    </script>
+</body>
+</html>
